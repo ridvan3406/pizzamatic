@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzamatic - Order Your Pizza</title>
+</head>
+<body>
+    <header>
+        <h1>Order Your Pizza</h1>
+    </header>
+    <main>
+        <form action="./order.html" method="POST">
+            <section> 
+                <label for="pizza_name">Name Your Pizza</label><br>
+                <input id="pizza_name" type="text">
+            </section>
+            <br>
+            <section>
+                <label for="pizza_base">Select Your Pizza</label><br>
+                <select id="pizza_base">
+                    <option value="standard">Standard</option>
+                    <option value="thin">Thin Crust</option>
+                    <option value="stuffed">Stuffed</option>
+                </select>
+            </section>
+            <br>
+            <section>
+                <label for="pizza_base_sauce">Select Base Sauce</label><br>
+                <input id="pizza_base_sauce" type="text" list="pizza_sauce_list">
+                <datalist id="pizza_sauce_list">
+                    <option value="tomatoe Sauce"></option>
+                    <option value="BBQ Sauce">Thin Crust</option>
+                    <option value="Hot BBQ Sauce">Stuffed</option>
+                </datalist>
+            </section>
+            <br>
+            <section>
+                <label for="pizza_size">Select Size</label><br>
+                <span>Small</span>
+                <input type="range" min="1" max="4" step="1">
+                <span>Extra Large</span>
+            </section>
+            <br>
+            <section>
+                <label for="">Select Toppings</label>
+                <br>
+                <input id="mushroom" type="checkbox" value="mushroom">
+                <label for="Mushroom">Mushroom</label>
+                <br>
+                <input id="olive" type="checkbox" value="olive">
+                <label for="olive">Olive</label>
+                <br>
+                <input id="pepper" type="checkbox" value="pepper">
+                <label for="pepper">Pepper</label>
+                <br>
+                <input id="onion" type="checkbox" value="onion">
+                <label for="onion">Onion</label>
+            </section>
+            <br>
+            <section>
+                <label for="">would you like extra cheese?</label><br>
+                <input id="extra_cheese" type="radio" name="extra_cheese" value="yes">
+                <label for ="extra_cheese"</label><br>
+                <input id="extra_cheese" type="radio" name="extra cheese" value="no">
+               
+            </section>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        &copy; 2020 Pizzamatic by ridvan
+    </footer>
+</body>
+</html>
